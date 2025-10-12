@@ -31,6 +31,7 @@ export default defineConfig({
 ## Plugin Options
 
 Relative paths resolve relative to the importing `.svelte` file.
+
 With `base` option set, absolute paths (started with `/`) resolve against <project-root>/<base>; relative-path behavior is unchanged.
 Suitable when all icons located in a single directory.
 
