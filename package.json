@@ -1,6 +1,8 @@
 {
 	"name": "svelte-svg-inline",
 	"version": "0.0.1",
+	"type": "module",
+	"main": "./dist/index.js",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run prepack",
@@ -9,18 +11,6 @@
 		"prepack": "svelte-kit sync && svelte-package",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
-	},
-	"files": [
-		"dist"
-	],
-	"svelte": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"type": "module",
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"svelte": "./dist/index.js"
-		}
 	},
 	"peerDependencies": {
 		"svelte": "^5.0.0"
@@ -44,6 +34,10 @@
 		"singleQuote": true,
 		"useTabs": true
 	},
+	"files": [
+		"dist"
+	],
+	"types": "./dist/index.d.ts",
 	"keywords": [
 		"svelte"
 	],
