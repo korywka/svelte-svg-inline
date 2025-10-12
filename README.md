@@ -9,10 +9,10 @@ A tiny Vite plugin that inlines external SVG files at **build time**.
 `vite.config.js`:
 
 ```ts
-import { svgInline } from 'svelte-svg-inline';
+import { svg } from 'svelte-svg-inline';
 
 export default defineConfig({
-	plugins: [svgInline(/** options */), sveltekit()],
+	plugins: [svg(/** options */), sveltekit()],
 });
 ```
 

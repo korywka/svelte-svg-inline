@@ -12,13 +12,13 @@ type Options = {
 };
 
 const ATTACH_NAME = 'svg';
-const LOG_TAG = '[svg-inline]';
+const LOG_TAG = '[svelte-svg-inline]';
 
-export function svgInline(options?: Options): Plugin {
+export function svg(options?: Options): Plugin {
 	let root: string;
 
 	return {
-		name: 'svelte-svg-inline',
+		name: 'svelte-svg',
 		enforce: 'pre',
 		configResolved(config) {
 			root = config.root;
