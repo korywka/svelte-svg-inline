@@ -18,7 +18,7 @@ export function svg(options?: Options): Plugin {
 	let root: string;
 
 	return {
-		name: 'svelte-svg',
+		name: 'svelte-svg-inline',
 		enforce: 'pre',
 		configResolved(config) {
 			root = config.root;
